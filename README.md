@@ -2,7 +2,7 @@
 
 **Hear what’s here.** A single-device, account-free object-awareness prototype for an AI for Smart Mobility hackathon. Point the rear camera forward; local detection identifies **people, chairs, and backpacks**, then plays a left / centre / right tone followed by a short spoken label.
 
-**[Open Disha](https://SamsDevForge.github.io/EchoGuide-AntiGravity/)** · **[Device capability check](https://SamsDevForge.github.io/EchoGuide-AntiGravity/probe)** · [Demo script](docs/SUBMISSION.md) · [Test record](docs/TESTING.md)
+**[Open Disha](https://SamsDevForge.github.io/Disha/)** · **[Device capability check](https://SamsDevForge.github.io/Disha/probe)** · [Demo script](docs/SUBMISSION.md) · [Test record](docs/TESTING.md)
 
 This is a stationary, supervised indoor demonstration. It can miss or misidentify objects. It does not certify a route safe, provide road-crossing guidance, or infer a clear path from missing detections.
 
@@ -11,8 +11,8 @@ This is a stationary, supervised indoor demonstration. It can miss or misidentif
 Install Node.js 22 or newer and Git, then:
 
 ```sh
-git clone https://github.com/SamsDevForge/EchoGuide-AntiGravity.git
-cd EchoGuide-AntiGravity
+git clone https://github.com/SamsDevForge/Disha.git
+cd Disha
 npm ci
 npm run models
 npm run dev
