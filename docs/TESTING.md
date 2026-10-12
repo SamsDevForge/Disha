@@ -1,4 +1,4 @@
-# EchoGuide validation
+# Disha validation
 
 ## Automated checks
 

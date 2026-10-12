@@ -6,5 +6,5 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 try {
   const sql = await readFile(new URL('../sql/001_init.sql', import.meta.url), 'utf8');
   await pool.query(sql);
-  console.log('EchoGuide database schema initialized.');
+  console.log('Disha database schema initialized.');
 } finally { await pool.end(); }

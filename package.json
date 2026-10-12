@@ -1,5 +1,5 @@
 {
-  "name": "echoguide", "version": "0.1.0", "private": true,
+  "name": "disha", "version": "0.1.0", "private": true,
   "workspaces": ["client", "server"],
   "scripts": {
     "dev": "concurrently -k -n api,web -c cyan,green \"npm run dev -w server\" \"npm run dev -w client\"",

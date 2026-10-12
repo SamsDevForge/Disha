@@ -1,4 +1,4 @@
-name: Verify and deploy EchoGuide
+name: Verify and deploy Disha
 on:
   push:
     branches: [main]
