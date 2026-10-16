@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: disha-api
+    name: drishti-api
     runtime: node
     plan: free
     buildCommand: npm ci && npm run build -w server

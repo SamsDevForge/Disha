@@ -1,4 +1,4 @@
-# Disha validation
+# Drishti validation
 
 ## Automated checks
 

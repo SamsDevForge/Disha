@@ -81,6 +81,9 @@ describe('audio cancellation across scene changes', () => {
     guide.update([item()], prefs, vi.fn());
     expect(spoken).toHaveLength(1);
 
+    // Spoken speech finishes in browser
+    spoken[0].onend?.();
+
     // After pace interval passes, it announces again
     vi.advanceTimersByTime(2000);
     guide.update([item()], prefs, vi.fn());
@@ -105,8 +108,8 @@ describe('audio cancellation across scene changes', () => {
     await guide.unlock();
     guide.update([item({ trackId: 'person-1', label: 'person', box: {x:0, y:0, width:1, height:1} })], prefs, onText);
     vi.advanceTimersByTime(260);
-    const oldEnd = spoken[0].onend!;
     guide.cancel(false); // cancel without resetting state
+    vi.advanceTimersByTime(2000);
     
     guide.update([item({ trackId: 'person-2', label: 'person', box: {x:0, y:0, width:1, height:1} })], prefs, onText);
     vi.advanceTimersByTime(260);

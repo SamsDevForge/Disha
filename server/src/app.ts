@@ -47,7 +47,7 @@ export function createApp(options: AppOptions = {}) {
     if (!token) { res.status(401).json({ error: 'Sign in to access saved preferences.' }); return; }
     let userId: string;
     try {
-      const payload = jwt.verify(token, secret, { algorithms: ['HS256'], issuer: 'disha', audience: 'disha-client' });
+      const payload = jwt.verify(token, secret, { algorithms: ['HS256'], issuer: 'drishti', audience: 'drishti-client' });
       if (typeof payload === 'string' || typeof payload.sub !== 'string' || !z.uuid().safeParse(payload.sub).success) throw new Error();
       userId = payload.sub;
     } catch { res.status(401).json({ error: 'Your session is invalid or expired. Please sign in again.' }); return; }
@@ -59,7 +59,7 @@ export function createApp(options: AppOptions = {}) {
     } catch (error) { next(error); }
   };
   const session = (user: UserRecord) => ({
-    token: jwt.sign({}, secret, { algorithm: 'HS256', subject: user.id, issuer: 'disha', audience: 'disha-client', expiresIn: '7d' }),
+    token: jwt.sign({}, secret, { algorithm: 'HS256', subject: user.id, issuer: 'drishti', audience: 'drishti-client', expiresIn: '7d' }),
     user: { id: user.id, email: user.email },
   });
   app.get('/api/health', (_req, res) => res.json({ status: 'ok', databaseConfigured, geminiConfigured: Boolean(env.GEMINI_API_KEY) }));

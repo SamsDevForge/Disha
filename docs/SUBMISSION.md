@@ -1,6 +1,6 @@
-# Disha demonstration
+# Drishti demonstration
 
-Disha is a guest-first browser prototype for awareness of selected visible objects. It detects people, chairs, and backpacks locally and plays a camera-relative directional tone followed by a spoken label. The intended demonstration is stationary and supervised indoors, using a phone with its rear camera facing forward and paired open-ear earbuds.
+Drishti is a guest-first browser prototype for awareness of selected visible objects. It detects people, chairs, and backpacks locally and plays a camera-relative directional tone followed by a spoken label. The intended demonstration is stationary and supervised indoors, using a phone with its rear camera facing forward and paired open-ear earbuds.
 
 ## Two-minute demo script
 

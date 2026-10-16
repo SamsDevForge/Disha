@@ -1,4 +1,4 @@
-name: Verify and deploy Disha
+name: Verify and deploy Drishti
 on:
   push:
     branches: [main]
@@ -25,7 +25,7 @@ jobs:
       - run: npm test
       - run: npm run build
         env:
-          VITE_BASE_PATH: /Disha/
+          VITE_BASE_PATH: /Drishti/
           VITE_STATIC_MODE: 'true'
       - run: cp client/dist/index.html client/dist/404.html
       - uses: actions/configure-pages@v5
