@@ -2,7 +2,7 @@
 
 **Hear what’s here.** A single-device, account-free object-awareness prototype for an AI for Smart Mobility hackathon. Point the rear camera forward; local detection identifies **people, chairs, and backpacks**, then plays a left / centre / right tone followed by a short spoken label.
 
-**[Open Drishti](https://SamsDevForge.github.io/Drishti/)** · **[Device capability check](https://SamsDevForge.github.io/Drishti/probe)** · [Demo script](docs/SUBMISSION.md) · [Test record](docs/TESTING.md)
+**[Open Drishti](https://watch-with-drishti.vercel.app/)**
 
 This is a stationary, supervised indoor demonstration. It can miss or misidentify objects. It does not certify a route safe, provide road-crossing guidance, or infer a clear path from missing detections.
 
